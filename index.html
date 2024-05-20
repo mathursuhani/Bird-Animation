@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bird Animation</title>
+    <style>
+        
+        
+        .birdcontainer{
+            position: relative;
+            animation-name: birdcont;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-play-state: running;
+        }
+        @keyframes birdcont{
+            from{
+                right:0%;
+            }
+            to{
+                right: 100%;
+            }
+        }
+        .bird2{
+            display: block;
+            width: 290px;
+            height: 450px;
+            background-image: url("img/4 .png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            animation: fly2 0.5s steps(3) infinite;
+            float: right;
+           
+                      
+        }
+        @keyframes fly2{
+            0%{
+              background-position: 0px 0px;  
+            }
+            100%{
+                background-position: -804px 0px;   
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="birdcontainer">
+        <div class="bird"></div>
+        <div class="bird2"></div>
+        
+    </div>
+    
+</body>
+</html>
